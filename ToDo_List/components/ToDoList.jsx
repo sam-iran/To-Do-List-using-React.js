@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
+import AddToDo from "./AddToDo";
 
-function ToDoList() {
+function ToDoList({todos,delTodo}) {
   return (
-    <div className='list_container'>
-        <div className='info'>
-            <p>Go to gym</p>
-            <button>Delete</button>
-        </div>
+    <div className="list_container">
+      {todos.map((todo,index)=>{
+        return(<AddToDo todos={todo} index={index} delTodo={delTodo}/>)
+      })}
     </div>
   )
 }
 
-export default ToDoList
+export default ToDoList;

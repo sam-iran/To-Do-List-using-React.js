@@ -1,12 +1,18 @@
-import React from 'react'
+import React from "react";
 
-function ToDo() {
+function ToDo({ inputVal, setInputVal, setTodoList }) {
+
   return (
-        <div className='input_container'>
-            <input type='text' placeholder='Enter a Task'></input>
-            <button>Add</button>
-        </div>
-  )
+    <div className="input_container">
+      <input
+        type="text"
+        value={inputVal}
+        onChange={setInputVal}
+        placeholder="Enter a Task"
+      ></input>
+      <button onClick={setTodoList}>Add</button>
+    </div>
+  );
 }
 
-export default ToDo
+export default ToDo;

@@ -5,12 +5,17 @@ body{
   background-size: cover;
 }
 
-h2{
+h3{
   text-align: center;
   font-family: cursive;
-  font-size: 2.0rem;
+  font-size: 2.5rem;
   color: blueviolet;
   text-shadow: 2px 3px blue;
+}
+
+/* For sweet Alert */
+#swal2-title{
+  font-family: cursive;
 }
 
 .input_container{
